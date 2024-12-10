@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextJS-2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<header class="header">
+    
+    <img src="logo.png" alt="Logo" class="logo">
+    
+    <div class="search-container">
+        <input type="text" placeholder="Rechercher un produit" class="search-bar">  
+        <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>   
+    </div>
+    <div class="menu-container">
+        <a href="#"><span class="icons"><i class="fa-regular fa-lightbulb"></span></i>Inspirations</a>
+        <a href="#"><span class="icons"><i class="fa-regular fa-heart"></span></i>Mes favoris <span class="favorites-count">24</span></a>
+    </div>
+</header>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Art de la Table</a></li>
+        <li><a href="#">Mobilier</a></li>
+        <li><a href="#">Nappage</a></li>
+        <li><a href="#">Matériel de Salle</a></li>
+        <li><a href="#">Cuisine</a></li>
+        <li><a href="#">Barbecue</a></li>
+        <li><a href="#">Tente</a></li>
+        <li><a href="#">Chauffage</a></li>
+        <li><a href="#">Podium - Piste de Danse</a></li>
+        <li><a href="#">Son et Lumière</a></li>
+    </ul>
+</nav>
+<main class="content">
+    <div class="breadcrumb">
+       Home
+        <ul>
+            <li>
+                Art de la table
+            </li>
+        </ul>
+    </div>
+    <div class="product-container">
+        <div class="machine">
+            <img src="table1.png" alt="machine ">
+            <div class="product-gallery">
+                <img src="table.png" alt="Product Thumbnail">
+                <img src="table.png" alt="Product Thumbnail">
+                <img src="table.png" alt="Product Thumbnail">   
+                <img src="table.png" alt="Product Thumbnail">
+               
+            </div>
+            
+        </div>
+      
+        <div class="container">
+            <h1 class="heading">Cheese – appareil à raclette 1/2 roue<i class="fa-regular fa-heart"></i></h1>
+            <p class="price">39,50€ <span>/ pièce</span></p>
+            <div class="dimensions">
+                
+                <span><i class="fa-solid fa-scale-unbalanced-flip"></i>20<sup>cm</sup></span> 
+                <span><i class="fa-regular fa-circle"></i>50<sup>cm</sup></span>
+                <p class="sub-tag">REF : VABGN5</p>
+                
+            </div>
+            <div class="description">
+                <p>Location appareil à raclette - Raclette traditionnelle 1/2 roue</p>
+                <p>Réglable en hauteur</p>
+                <p>Appareil à raclette professionnel</p>
+                <p>Boîtier de chauffe horizontal réglable en hauteur</p><br>
+                <p>220v</p>
+                <p>900W</p>
+               
+                <div class="product-actions">
+                    <div class="quantity">
+                        <button class="decrement">-</button>
+                        <input type="text" value="1" readonly>
+                        <button class="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">AJOUTER AU PANIER</button>
+                </div>
+                
+            </div>
+        
+            </div>
+            
+        </div>
+        <div class="container-item">
+        <div class="product-description">
+            <h3>Description produit</h3>
+            <p>
+                Festi vous propose à la location un/une "Jewel – grand couteau/10pc" pour votre événement et ce dès 0,35 € / pièce (HTVA). Que ce soit pour votre mariage, une fête d'anniversaire ou du personnel, ce produit a fait l'objet d'une sélection rigoureuse par notre équipe. Il est en location chez nous sous la référence "VAJGC". Nous sommes à votre disposition pour que les événements de nos clients, même en last-minute, soient toujours une réussite. Vous pourrez trouver tout une série d'autre produit à louer de ce type dans la catégorie "Art de la Table".
+            </p>
+        </div>
+            <div class="txt">
+                <h3>LIVRAISONS <i class="fa-solid fa-plus"></i></h3> 
+                <h3>QUESTIONS  <i class="fa-solid fa-plus"></i></h3>
+             </div>
+        
+    </div>
+      
+    </div>
+
+    <section>
+
+    <h1>Articles Similaires</h1>
+  
+    <div class="articles-containers">
+      <!-- First Article Card -->
+      <div class="article-card">
+        <div class="icn"><i class="fa-regular fa-heart"></i></div>
+        <img src="table.png" alt="Table">
+        <div class="actions">
+          <div class="quantity">
+            <p>QTE</p>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <button class="btn">Ajouter</button>
+        </div>
+        <div class="bottom-text">
+          <h2>Title <span class="price">O<sup>€</sup></span></h2>
+          <p>0,35€/Pièce · RÉF : VABGN5</p>
+          <span class="badge">20 pièces</span>
+        </div>
+      </div>
+    
+      <!-- Second Article Card -->
+      <div class="article-card">
+        <div class="icn"><i class="fa-regular fa-heart"></i></div>
+        <img src="table.png" alt="Chair">
+        <div class="actions">
+          <div class="quantity">
+            <p>QTE</p>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <button class="btn">Ajouter</button>
+        </div>
+        <div class="bottom-text">
+          <h2>Title <span class="price">O<sup>€</sup></span></h2>
+          <p>0,35€/Pièce · RÉF : VABGN5</p>
+          <span class="badge">20 pièces</span>
+        </div>
+      </div>
+    
+      <!-- Third Article Card -->
+      <div class="article-card">
+        <div class="icn"><i class="fa-regular fa-heart"></i></div>
+        <img src="table.png" alt="Lamp">
+        <div class="actions">
+          <div class="quantity">
+            <p>QTE</p>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <button class="btn">Ajouter</button>
+        </div>
+        <div class="bottom-text">
+          <h2>Title <span class="price">O<sup>€</sup></span></h2>
+          <p>0,35€/Pièce · RÉF : VABGN5</p>
+          <span class="badge">20 pièces</span>
+        </div>
+      </div>
+      <div class="article-card">
+        <div class="icn"><i class="fa-regular fa-heart"></i></div>
+        <img src="table.png" alt="Lamp">
+        <div class="actions">
+          <div class="quantity">
+            <p>QTE</p>
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+          <button class="btn">Ajouter</button>
+        </div>
+        <div class="bottom-text">
+          <h2>Title <span class="price">O<sup>€</sup></span></h2>
+          <p>0,35€/Pièce · RÉF : VABGN5</p>
+          <span class="badge">20 pièces</span>
+        </div>
+      </div>
+    </div>
+    
+  
+  
+</section>
+
+
+<section class="sec-2">
+  <h3 class="tag-1">Ces produits pourraient vous intrèsser</h3>
+  <div class="articles-containers">
+    <!-- First Article Card -->
+    <div class="article-card">
+      <div class="icn"><i class="fa-regular fa-heart"></i></div>
+      <img src="table.png" alt="Table">
+      <div class="actions">
+        <div class="quantity">
+          <p>QTE</p>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <button class="btn">Ajouter</button>
+      </div>
+      <div class="bottom-text">
+        <h2>Title <span class="price">O<sup>€</sup></span></h2>
+        <p>0,35€/Pièce · RÉF : VABGN5</p>
+        <span class="badge">20 pièces</span>
+      </div>
+    </div>
+  
+    <!-- Second Article Card -->
+    <div class="article-card">
+      <div class="icn"><i class="fa-regular fa-heart"></i></div>
+      <img src="table.png" alt="Chair">
+      <div class="actions">
+        <div class="quantity">
+          <p>QTE</p>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <button class="btn">Ajouter</button>
+      </div>
+      <div class="bottom-text">
+        <h2>Title <span class="price">O<sup>€</sup></span></h2>
+        <p>0,35€/Pièce · RÉF : VABGN5</p>
+        <span class="badge">20 pièces</span>
+      </div>
+    </div>
+  
+    <!-- Third Article Card -->
+    <div class="article-card">
+      <div class="icn"><i class="fa-regular fa-heart"></i></div>
+      <img src="table.png" alt="Lamp">
+      <div class="actions">
+        <div class="quantity">
+          <p>QTE</p>
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <button class="btn">Ajouter</button>
+      </div>
+      <div class="bottom-text">
+        <h2>Title <span class="price">O<sup>€</sup></span></h2>
+        <p>0,35€/Pièce · RÉF : VABGN5</p>
+        <span class="badge">20 pièces</span>
+      </div>
+    </div>
+</section>
+
+<div class="services-section">
+  
+  <h2>On s'occupe de <span>tout</span></h2>
+  <p class="subtitle">Office ipsum you must be muted. It meeting commitment busy pain.</p>
+
+  <div class="services-container">
+    <!-- First Service -->
+  
+    <div class="service-item">
+      <img src="Shopping Cart.png" alt="Livraison & Reprise">
+      <h3>Livraison & Reprise</h3>
+      <p>Selon vos besoins</p>
+    </div>
+   
+    <div class="divider"></div> 
+
+    <!-- Second Service -->
+    <div class="line"></div>
+    <div class="service-item">
+      <img src="Fork Spoon.png" alt="Nettoyage">
+      <h3>Nettoyage</h3>
+      <p>Selon vos besoins</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Third Service -->
+    <div class="line"></div>
+    <div class="service-item">
+      <img src="Payment Method 3D Animation.png" alt="Commande Illimitée">
+      <h3>Commande Illimitée</h3>
+      <p>Tout est possible</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Fourth Service -->
+    <div class="line"></div>
+    <div class="service-item">
+       <img src="Global Transportation 3D Animated Icon.png" alt="Transport & Enlèvement"> 
+      <h3>Transport & Enlèvement</h3>
+      <p>On s'occupe de tout.</p>
+    </div>
+  </div>
+
+      
+</section>
+</main>
+<div class="layout-container">
+  <div class="image-container">
+    <img src="ttt.png" alt="Room Interior" class="room-image">
+  </div>
+  <div class="text-container">
+    <h1 class="heading">
+      S'inscrire & économiser <span class="discount-highlight">10%</span>
+    </h1>
+    <p class="description-text">
+      Office ipsum you must be muted. Synergize helicopter prioritize anyway job due harvest moon. 
+      Yet busy any meeting shark light marginalised 4-blocker message. Productize corporate review 
+      highlights lunch. Company another pushback items dear or any.
+    </p>
+    <form class="email-form">
+      <input type="email" class="email-input" placeholder="john@doe.com" />
+      <button type="submit" class="submit-button">S’INSCRIRE →</button>
+    </form>
+  </div>
+ 
+  
+</div>
+
+<footer class="footer">
+  <div class="footer-section">
+      <img src="logo.png" alt="WeFrameTech Logo" class="footer-logo">
+      
+  </div>
+  <div class="footer-section">
+      <h4>INFOS PRATIQUES</h4>
+      <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Livraisons & Reprises</a></li>
+          <li><a href="#">Mode d’emploi</a></li>
+          <li><a href="#">F.A.Q</a></li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h4>LÉGAL</h4>
+      <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h4>MON COMPTE</h4>
+      <ul>
+          <li><a href="#">Accéder à mon compte</a></li>
+          <li><a href="#">Ma liste d’envie</a></li>
+          <li><a href="#">Créer un compte</a></li>
+          <li><a href="#">Mot de passe oublié</a></li>
+        
+      </ul>
+  </div> 
+  <div class="footer-section footer-social">
+    <h4>NOUS SUIVRE</h4>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="twitter.png" alt="Twitter Icon">
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="instagram.png" alt="Instagram Icon">
+    </a>
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="linkedin.png" alt="LinkedIn Icon">
+    </a>
+</div>
+
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
